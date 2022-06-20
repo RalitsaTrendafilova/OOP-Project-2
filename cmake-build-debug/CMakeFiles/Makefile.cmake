@@ -51,5 +51,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/RasterImageCL.dir/DependInfo.cmake"
+  "CMakeFiles/OOP_Project_2.dir/DependInfo.cmake"
   )

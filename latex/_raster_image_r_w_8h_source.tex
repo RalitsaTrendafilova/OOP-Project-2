@@ -1,0 +1,19 @@
+\hypertarget{_raster_image_r_w_8h_source}{}\doxysection{Raster\+Image\+RW.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}RasterImageBase.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_raster_image_reader}{RasterImageReader}} \{}
+\DoxyCodeLine{9 \textcolor{keyword}{private}:}
+\DoxyCodeLine{10     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} is\_in\_binary (FileType t);}
+\DoxyCodeLine{11     \textcolor{keyword}{static} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} get\_color\_from\_asci (std::ifstream\& stream, FileType type, \textcolor{keywordtype}{int} max\_value\_ = 1);}
+\DoxyCodeLine{12     \textcolor{keyword}{static} \textcolor{keywordtype}{void} write\_asci\_from\_pixel (std::ofstream\& stream, \textcolor{keyword}{const} \mbox{\hyperlink{class_raster_image_base}{RasterImageBase}}* img\_base, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} pixel);}
+\DoxyCodeLine{13     \textcolor{keyword}{static} FileType get\_filetype\_from\_name (\textcolor{keyword}{const} std::string\& f);}
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \textcolor{keyword}{static} \mbox{\hyperlink{class_raster_image_base}{RasterImageBase}}* \mbox{\hyperlink{class_raster_image_reader_aa544bbf188289d90cc4e532b3df71c8f}{read}} (\textcolor{keyword}{const} std::string \&filename);}
+\DoxyCodeLine{17     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_raster_image_reader_a5fe6edcf41a0310ea21c7111a15e520a}{save}} (\mbox{\hyperlink{class_raster_image_base}{RasterImageBase}}*, \textcolor{keyword}{const} std::string\& filename);}
+\DoxyCodeLine{18 \};}
+\DoxyCodeLine{19 }
+
+\end{DoxyCode}

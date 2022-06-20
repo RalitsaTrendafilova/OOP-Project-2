@@ -1,0 +1,63 @@
+\hypertarget{class_add_transformation_to_image_in_session_command}{}\doxysection{Add\+Transformation\+To\+Image\+In\+Session\+Command Class Reference}
+\label{class_add_transformation_to_image_in_session_command}\index{AddTransformationToImageInSessionCommand@{AddTransformationToImageInSessionCommand}}
+
+
+{\ttfamily \#include $<$Add\+Transformation\+To\+Image\+In\+Session\+Command.\+h$>$}
+
+Inheritance diagram for Add\+Transformation\+To\+Image\+In\+Session\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_add_transformation_to_image_in_session_command}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_add_transformation_to_image_in_session_command_a6b21fabaaa5c7b6a22b433629a8eafbe}{Add\+Transformation\+To\+Image\+In\+Session\+Command}} (\mbox{\hyperlink{class_session}{Session}} $\ast$ses, \mbox{\hyperlink{class_transformation_base}{Transformation\+Base}} $\ast$t)
+\item 
+void \mbox{\hyperlink{class_add_transformation_to_image_in_session_command_aa2f9a888c90214e079bc4f5e488361cd}{execute}} () override
+\item 
+void \mbox{\hyperlink{class_add_transformation_to_image_in_session_command_a854b4545435b5e76b7fc28ab726fdd46}{revert}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_add_transformation_to_image_in_session_command}{Add\+Transformation\+To\+Image\+In\+Session\+Command}} class. It is used to add a given transformation to the images in the active session. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_add_transformation_to_image_in_session_command_a6b21fabaaa5c7b6a22b433629a8eafbe}\label{class_add_transformation_to_image_in_session_command_a6b21fabaaa5c7b6a22b433629a8eafbe}} 
+\index{AddTransformationToImageInSessionCommand@{AddTransformationToImageInSessionCommand}!AddTransformationToImageInSessionCommand@{AddTransformationToImageInSessionCommand}}
+\index{AddTransformationToImageInSessionCommand@{AddTransformationToImageInSessionCommand}!AddTransformationToImageInSessionCommand@{AddTransformationToImageInSessionCommand}}
+\doxysubsubsection{\texorpdfstring{AddTransformationToImageInSessionCommand()}{AddTransformationToImageInSessionCommand()}}
+{\footnotesize\ttfamily Add\+Transformation\+To\+Image\+In\+Session\+Command\+::\+Add\+Transformation\+To\+Image\+In\+Session\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_session}{Session}} $\ast$}]{ses,  }\item[{\mbox{\hyperlink{class_transformation_base}{Transformation\+Base}} $\ast$}]{t }\end{DoxyParamCaption})}
+
+Parameter constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_add_transformation_to_image_in_session_command_aa2f9a888c90214e079bc4f5e488361cd}\label{class_add_transformation_to_image_in_session_command_aa2f9a888c90214e079bc4f5e488361cd}} 
+\index{AddTransformationToImageInSessionCommand@{AddTransformationToImageInSessionCommand}!execute@{execute}}
+\index{execute@{execute}!AddTransformationToImageInSessionCommand@{AddTransformationToImageInSessionCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Add\+Transformation\+To\+Image\+In\+Session\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Adds the transformation in the pending transformations for the images in the session. 
+
+Implements \mbox{\hyperlink{class_session_command_base}{Session\+Command\+Base}}.
+
+\mbox{\Hypertarget{class_add_transformation_to_image_in_session_command_a854b4545435b5e76b7fc28ab726fdd46}\label{class_add_transformation_to_image_in_session_command_a854b4545435b5e76b7fc28ab726fdd46}} 
+\index{AddTransformationToImageInSessionCommand@{AddTransformationToImageInSessionCommand}!revert@{revert}}
+\index{revert@{revert}!AddTransformationToImageInSessionCommand@{AddTransformationToImageInSessionCommand}}
+\doxysubsubsection{\texorpdfstring{revert()}{revert()}}
+{\footnotesize\ttfamily void Add\+Transformation\+To\+Image\+In\+Session\+Command\+::revert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Removes the last pending transformation for the images. 
+
+Implements \mbox{\hyperlink{class_session_command_base}{Session\+Command\+Base}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Add\+Transformation\+To\+Image\+In\+Session\+Command.\+h\item 
+Add\+Transformation\+To\+Image\+In\+Session\+Command.\+cpp\end{DoxyCompactItemize}

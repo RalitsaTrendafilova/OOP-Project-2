@@ -1,0 +1,28 @@
+\hypertarget{_session_8h_source}{}\doxysection{Session.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <stack>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}RasterImageBase.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_session_command_base}{SessionCommandBase}};}
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_session}{Session}} \{}
+\DoxyCodeLine{12 \textcolor{keyword}{private}:}
+\DoxyCodeLine{13     \textcolor{keywordtype}{int} id\_;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     std::vector<RasterImageBase*> \mbox{\hyperlink{class_session_a5abddc7ceac72fa41902e852ef056a76}{raster\_images\_}};}
+\DoxyCodeLine{17     std::stack<SessionCommandBase*> \mbox{\hyperlink{class_session_ad71671d40f1ba74a9fbd5af412f7a353}{command\_stack\_}};}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_session_a7097a3ee1535253145ceb42604886887}{Session}}(\mbox{\hyperlink{class_raster_image_base}{RasterImageBase}}* img);}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_session_a8753bb9dee966b7d39abc9b7237cd665}{\string~Session}}();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_session_a850473ab2ad30341c30de957c1a4dbe9}{setId}}(\textcolor{keywordtype}{size\_t} i);}
+\DoxyCodeLine{22     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_session_a1a9232e627b902f1ea1701f92423fddb}{getId}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_session_ab7c658bcff4a089d12e8c74586f7c38c}{applyAndPopTransformations}}();}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_raster_image_base}{RasterImageBase}}* \mbox{\hyperlink{class_session_a5f0552b596cc79c0cd327eb31b355ff4}{getImage}}(\textcolor{keyword}{const} std::string\& name);}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_session_a4307a9e2749a0c05123ec34825527805}{popImageFirst}}();}
+\DoxyCodeLine{27     std::string \mbox{\hyperlink{class_session_a8df62609ed949e50cb9807be91ea3326}{getInformation}}();}
+\DoxyCodeLine{28 \};}
+\DoxyCodeLine{29 }
+
+\end{DoxyCode}

@@ -1,0 +1,30 @@
+\hypertarget{_application_controller_8h_source}{}\doxysection{Application\+Controller.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Session.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}RasterImageBase.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}RasterImageRW.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}SessionCommandBase.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_application_controller}{ApplicationController}} \{}
+\DoxyCodeLine{15 \textcolor{keyword}{private}:}
+\DoxyCodeLine{16     std::string line;}
+\DoxyCodeLine{17     std::vector<std::string> tokens;}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_raster_image_reader}{RasterImageReader}} image\_RW\_;}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} tokenize\_string(\textcolor{keyword}{const} std::string\& line);}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_session_command_base}{SessionCommandBase}}* translate\_tokens\_to\_command(\textcolor{keyword}{const} std::vector<std::string>\& tokens) \textcolor{keyword}{const};}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} saveSessionImages();}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} saveImageAs(\textcolor{keyword}{const} std::string\& f);}
+\DoxyCodeLine{26 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     std::vector<Session*> \mbox{\hyperlink{class_application_controller_a78deef704be9390c64498688746a0fda}{sessions\_}};}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_session}{Session}}* \mbox{\hyperlink{class_application_controller_a0d290de3cbfc5b8333eb8ae5a6815670}{active\_}};}
+\DoxyCodeLine{30     \textcolor{keyword}{static} \mbox{\hyperlink{class_application_controller}{ApplicationController}}\& \mbox{\hyperlink{class_application_controller_a0f624258dd9cba4246b3faa7e1e69bc4}{getApplicationController}}();}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_application_controller_ab8adcd603fb8633c69afd463e47eb830}{run}}();}
+\DoxyCodeLine{32 \};}
+\DoxyCodeLine{33 }
+
+\end{DoxyCode}

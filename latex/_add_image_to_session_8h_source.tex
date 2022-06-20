@@ -1,0 +1,20 @@
+\hypertarget{_add_image_to_session_8h_source}{}\doxysection{Add\+Image\+To\+Session.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}SessionCommandBase.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Session.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}RasterImageRW.h"{}}}
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_add_image_to_session}{AddImageToSession}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_session_command_base}{SessionCommandBase}} \{}
+\DoxyCodeLine{10     std::string filename\_;}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_raster_image_reader}{RasterImageReader}} reader\_;}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_add_image_to_session_a813e310db74d8f71171f01e6ec3ddf74}{AddImageToSession}}(\mbox{\hyperlink{class_session}{Session}}* target, std::string filename);}
+\DoxyCodeLine{14     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_add_image_to_session_a92290f56aa397e5f8aed45a47d936cbf}{execute}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{15     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_add_image_to_session_a0a2274ec5430bae09a68b019a299ed75}{revert}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{16 \};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{comment}{//commands -\/ addimagetosession, makecollage, sessioncommandbase, addtransformationtoimageinsession}}
+\DoxyCodeLine{19 \textcolor{comment}{//imagetransformations -\/ apply*}}
+
+\end{DoxyCode}

@@ -1,0 +1,19 @@
+\hypertarget{_make_collage_command_8h_source}{}\doxysection{Make\+Collage\+Command.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}SessionCommandBase.h"{}}}
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_make_collage_command}{MakeCollageCommand}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_session_command_base}{SessionCommandBase}} \{}
+\DoxyCodeLine{8 \textcolor{keyword}{private}:}
+\DoxyCodeLine{9     std::string image\_name\_a;}
+\DoxyCodeLine{10     std::string image\_name\_b;}
+\DoxyCodeLine{11     std::string image\_name\_new;}
+\DoxyCodeLine{12     \textcolor{keywordtype}{bool} is\_vertical;}
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_make_collage_command_a2ccc9a0765e26adec7c9421759314336}{MakeCollageCommand}}(\mbox{\hyperlink{class_session}{Session}}* ses, std::string img\_a, std::string img\_b, std::string img\_new, \textcolor{keywordtype}{bool} vertical=\textcolor{keyword}{true});}
+\DoxyCodeLine{15     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_make_collage_command_acd77db8717b50beea9b833215270cf1f}{execute}}();}
+\DoxyCodeLine{16     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_make_collage_command_a1da142097a22896e76f14f7df22dd5c6}{revert}}();}
+\DoxyCodeLine{17 \};}
+\DoxyCodeLine{18 }
+
+\end{DoxyCode}

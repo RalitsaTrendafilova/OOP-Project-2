@@ -1,0 +1,116 @@
+\hypertarget{class_session}{}\doxysection{Session Class Reference}
+\label{class_session}\index{Session@{Session}}
+
+
+{\ttfamily \#include $<$Session.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_session_a7097a3ee1535253145ceb42604886887}{Session}} (\mbox{\hyperlink{class_raster_image_base}{Raster\+Image\+Base}} $\ast$img)
+\item 
+\mbox{\hyperlink{class_session_a8753bb9dee966b7d39abc9b7237cd665}{$\sim$\+Session}} ()
+\item 
+void \mbox{\hyperlink{class_session_a850473ab2ad30341c30de957c1a4dbe9}{set\+Id}} (size\+\_\+t i)
+\item 
+int \mbox{\hyperlink{class_session_a1a9232e627b902f1ea1701f92423fddb}{get\+Id}} () const
+\item 
+void \mbox{\hyperlink{class_session_ab7c658bcff4a089d12e8c74586f7c38c}{apply\+And\+Pop\+Transformations}} ()
+\item 
+\mbox{\hyperlink{class_raster_image_base}{Raster\+Image\+Base}} $\ast$ \mbox{\hyperlink{class_session_a5f0552b596cc79c0cd327eb31b355ff4}{get\+Image}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{class_session_a4307a9e2749a0c05123ec34825527805}{pop\+Image\+First}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_session_a8df62609ed949e50cb9807be91ea3326}{get\+Information}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_raster_image_base}{Raster\+Image\+Base}} $\ast$ $>$ \mbox{\hyperlink{class_session_a5abddc7ceac72fa41902e852ef056a76}{raster\+\_\+images\+\_\+}}
+\item 
+std\+::stack$<$ \mbox{\hyperlink{class_session_command_base}{Session\+Command\+Base}} $\ast$ $>$ \mbox{\hyperlink{class_session_ad71671d40f1ba74a9fbd5af412f7a353}{command\+\_\+stack\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_session}{Session}} class. It contains the images in the session and stack with commands that will be eventually executed. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_session_a7097a3ee1535253145ceb42604886887}\label{class_session_a7097a3ee1535253145ceb42604886887}} 
+\index{Session@{Session}!Session@{Session}}
+\index{Session@{Session}!Session@{Session}}
+\doxysubsubsection{\texorpdfstring{Session()}{Session()}}
+{\footnotesize\ttfamily Session\+::\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raster_image_base}{Raster\+Image\+Base}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+Parameter constructor \mbox{\Hypertarget{class_session_a8753bb9dee966b7d39abc9b7237cd665}\label{class_session_a8753bb9dee966b7d39abc9b7237cd665}} 
+\index{Session@{Session}!````~Session@{$\sim$Session}}
+\index{````~Session@{$\sim$Session}!Session@{Session}}
+\doxysubsubsection{\texorpdfstring{$\sim$Session()}{~Session()}}
+{\footnotesize\ttfamily Session\+::$\sim$\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_session_ab7c658bcff4a089d12e8c74586f7c38c}\label{class_session_ab7c658bcff4a089d12e8c74586f7c38c}} 
+\index{Session@{Session}!applyAndPopTransformations@{applyAndPopTransformations}}
+\index{applyAndPopTransformations@{applyAndPopTransformations}!Session@{Session}}
+\doxysubsubsection{\texorpdfstring{applyAndPopTransformations()}{applyAndPopTransformations()}}
+{\footnotesize\ttfamily void Session\+::apply\+And\+Pop\+Transformations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Executes all pending transformations. \mbox{\Hypertarget{class_session_a1a9232e627b902f1ea1701f92423fddb}\label{class_session_a1a9232e627b902f1ea1701f92423fddb}} 
+\index{Session@{Session}!getId@{getId}}
+\index{getId@{getId}!Session@{Session}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Session\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+ID of the session. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_session_a5f0552b596cc79c0cd327eb31b355ff4}\label{class_session_a5f0552b596cc79c0cd327eb31b355ff4}} 
+\index{Session@{Session}!getImage@{getImage}}
+\index{getImage@{getImage}!Session@{Session}}
+\doxysubsubsection{\texorpdfstring{getImage()}{getImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raster_image_base}{Raster\+Image\+Base}} $\ast$ Session\+::get\+Image (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+the image with the given name if it\textquotesingle{}s int the session. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_session_a8df62609ed949e50cb9807be91ea3326}\label{class_session_a8df62609ed949e50cb9807be91ea3326}} 
+\index{Session@{Session}!getInformation@{getInformation}}
+\index{getInformation@{getInformation}!Session@{Session}}
+\doxysubsubsection{\texorpdfstring{getInformation()}{getInformation()}}
+{\footnotesize\ttfamily std\+::string Session\+::get\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints information about the session. \mbox{\Hypertarget{class_session_a4307a9e2749a0c05123ec34825527805}\label{class_session_a4307a9e2749a0c05123ec34825527805}} 
+\index{Session@{Session}!popImageFirst@{popImageFirst}}
+\index{popImageFirst@{popImageFirst}!Session@{Session}}
+\doxysubsubsection{\texorpdfstring{popImageFirst()}{popImageFirst()}}
+{\footnotesize\ttfamily void Session\+::pop\+Image\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Removes the first image in the session \mbox{\Hypertarget{class_session_a850473ab2ad30341c30de957c1a4dbe9}\label{class_session_a850473ab2ad30341c30de957c1a4dbe9}} 
+\index{Session@{Session}!setId@{setId}}
+\index{setId@{setId}!Session@{Session}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void Session\+::set\+Id (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{i }\end{DoxyParamCaption})}
+
+@set ID of the session. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_session_ad71671d40f1ba74a9fbd5af412f7a353}\label{class_session_ad71671d40f1ba74a9fbd5af412f7a353}} 
+\index{Session@{Session}!command\_stack\_@{command\_stack\_}}
+\index{command\_stack\_@{command\_stack\_}!Session@{Session}}
+\doxysubsubsection{\texorpdfstring{command\_stack\_}{command\_stack\_}}
+{\footnotesize\ttfamily std\+::stack$<$\mbox{\hyperlink{class_session_command_base}{Session\+Command\+Base}}$\ast$$>$ Session\+::command\+\_\+stack\+\_\+}
+
+Stack with pending commands. \mbox{\Hypertarget{class_session_a5abddc7ceac72fa41902e852ef056a76}\label{class_session_a5abddc7ceac72fa41902e852ef056a76}} 
+\index{Session@{Session}!raster\_images\_@{raster\_images\_}}
+\index{raster\_images\_@{raster\_images\_}!Session@{Session}}
+\doxysubsubsection{\texorpdfstring{raster\_images\_}{raster\_images\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_raster_image_base}{Raster\+Image\+Base}}$\ast$$>$ Session\+::raster\+\_\+images\+\_\+}
+
+Added images in session. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Session.\+h\item 
+Session.\+cpp\end{DoxyCompactItemize}

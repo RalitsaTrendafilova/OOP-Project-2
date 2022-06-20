@@ -1,0 +1,43 @@
+\hypertarget{_raster_image_base_8h_source}{}\doxysection{Raster\+Image\+Base.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <utility>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}TransformationBase.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define RED\_BITMASK 0xFF000000}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define BLUE\_BITMASK 0x00FF0000}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define GREEN\_BITMASK 0x0000FF00}}
+\DoxyCodeLine{17 \textcolor{keyword}{enum class} FileType \{}
+\DoxyCodeLine{18     P1, P2, P3, P4, P5, P6}
+\DoxyCodeLine{19 \};}
+\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{class_raster_image_base}{RasterImageBase}} \{}
+\DoxyCodeLine{25 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{26     std::string name\_;}
+\DoxyCodeLine{27     \textcolor{keywordtype}{size\_t} width\_;}
+\DoxyCodeLine{28     \textcolor{keywordtype}{size\_t} height\_;}
+\DoxyCodeLine{29     FileType filetype\_;}
+\DoxyCodeLine{30     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_raster_image_base_aa4f69d41164e25c79c207c9f51780414}{max\_value\_}};}
+\DoxyCodeLine{31     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}* \mbox{\hyperlink{class_raster_image_base_a9911b61fcb328238a40ed12044e582c3}{pixels\_}};}
+\DoxyCodeLine{32     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_raster_image_base_a398aa7700dea279636d73ad3c81db00b}{get\_index}}(\textcolor{keywordtype}{size\_t} r, \textcolor{keywordtype}{size\_t} c) \textcolor{keyword}{const};}
+\DoxyCodeLine{34 \textcolor{keyword}{public}:}
+\DoxyCodeLine{35     \mbox{\hyperlink{class_raster_image_base_a1ed72da57b3832e192c3b8bb6869064e}{RasterImageBase}}(std::string name, \textcolor{keywordtype}{int} w, \textcolor{keywordtype}{int} h);}
+\DoxyCodeLine{36     \mbox{\hyperlink{class_raster_image_base}{RasterImageBase}}\& \mbox{\hyperlink{class_raster_image_base_a9bbf32c70aa47b13879b3228a1244512}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_raster_image_base}{RasterImageBase}}\& other);}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_raster_image_base}{\string~RasterImageBase}}();}
+\DoxyCodeLine{38     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_raster_image_base_a37b47e14a128b2334e8f07e9896c6af0}{getWidth}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{39     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_raster_image_base_ad496175e0a40d383d4d7919d111bd01d}{getHeight}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{41     FileType \mbox{\hyperlink{class_raster_image_base_a8c71b5484e2a5efb73293a845e90260a}{getType}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_raster_image_base_a9c1bd9195289105d65235ee552a0d26d}{setType}}(FileType t);}
+\DoxyCodeLine{44     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_raster_image_base_a8c61f4322ea8af935b74d644f4a1354d}{getMaxValue}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_raster_image_base_ae8bf91be8143588f721d7907a78eedf2}{setMaxValue}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} mv);}
+\DoxyCodeLine{47     std::vector<TransformationBase*> \mbox{\hyperlink{class_raster_image_base_a5daac5b84fb4a29321ad32b4abe1a0d0}{pending\_transformations\_}};}
+\DoxyCodeLine{50     std::string \mbox{\hyperlink{class_raster_image_base_a0fd38fdf514e37b49981739b281e42fc}{getName}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_raster_image_base_a9fe06eae06a0723bdeff22e4eb60606f}{setName}}(std::string s);}
+\DoxyCodeLine{52     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_raster_image_base_a41d0994e072fb009bb1289e49ff3ad8b}{setPixel}}(\textcolor{keywordtype}{size\_t}, \textcolor{keywordtype}{size\_t}, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}) = 0;}
+\DoxyCodeLine{53     \textcolor{keyword}{virtual} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_raster_image_base_a2b3ec2a89d1e8f3157011faa112ba01f}{getPixel}}(\textcolor{keywordtype}{size\_t}, \textcolor{keywordtype}{size\_t}) \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_raster_image_base_a367130eba698cd557ee470fa0c4027dd}{applyAndPopTransformations}}();}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+
+\end{DoxyCode}

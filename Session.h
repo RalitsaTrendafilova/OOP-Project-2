@@ -4,55 +4,26 @@
 #include "RasterImageBase.h"
 #include <algorithm>
 class SessionCommandBase;
-typedef uint8_t SessionID;
-class Session
-{
+/**
+ * The Session class. It contains the images in the session
+ * and stack with commands that will be eventually executed.
+ * */
+class Session {
 private:
 	int id_;
 
 public:
-	std::vector<RasterImageBase*> raster_images_;
-	std::stack<SessionCommandBase*> command_stack_;
+	std::vector<RasterImageBase*> raster_images_;/**< Added images in session. */
+	std::stack<SessionCommandBase*> command_stack_;/**< Stack with pending commands. */
 
-	Session(RasterImageBase*);
-	~Session() 
-	{
-		for (size_t i = 0; i < raster_images_.size(); i++)
-		{
-			delete raster_images_[i];
-		}
-
-
-		while (!command_stack_.empty())
-		{
-			delete command_stack_.top();
-			command_stack_.pop();
-		}
-	}
-	void inline setId(int i) { this->id_ = i; }
-	int inline getId() { return this->id_; }
-
-	void printPendingTransformations();
+	Session(RasterImageBase* img);/**< Parameter constructor */
+	~Session();/**<  Destructor */
+	void setId(size_t i);/**< @set ID of the session. */
+	int getId() const;/**< @return ID of the session. */
 	
-	void applyAndPopTransformations();
-	void popImage() { delete raster_images_.back(); raster_images_.pop_back(); }
-	void clearAllImages() { raster_images_.clear(); }
-	RasterImageBase* getImage(const std::string& name) 
-	{
-		auto foundImageWithName = std::find_if(this->raster_images_.begin(),
-			this->raster_images_.end(), [=](RasterImageBase* ri) {return ri->getName() == name; });
-		if (foundImageWithName!=raster_images_.end())
-		{
-			return *foundImageWithName;
-		}
-		return nullptr;
-	}
-
-	void popImageFirst() {
-		delete raster_images_[0]; 
-		raster_images_.erase(raster_images_.begin()); }
-
-
-	std::string getInformation();
+	void applyAndPopTransformations();/**<  Executes all pending transformations. */
+	RasterImageBase* getImage(const std::string& name);/**< @return the image with the given name if it's int the session. */
+	void popImageFirst();/**< Removes the first image in the session */
+	std::string getInformation();/**< Prints information about the session. */
 };
 

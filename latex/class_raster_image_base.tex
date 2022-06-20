@@ -1,0 +1,219 @@
+\hypertarget{class_raster_image_base}{}\doxysection{Raster\+Image\+Base Class Reference}
+\label{class_raster_image_base}\index{RasterImageBase@{RasterImageBase}}
+
+
+{\ttfamily \#include $<$Raster\+Image\+Base.\+h$>$}
+
+Inheritance diagram for Raster\+Image\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_raster_image_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_raster_image_base_a1ed72da57b3832e192c3b8bb6869064e}{Raster\+Image\+Base}} (std\+::string name, int w, int h)
+\item 
+\mbox{\hyperlink{class_raster_image_base}{Raster\+Image\+Base}} \& \mbox{\hyperlink{class_raster_image_base_a9bbf32c70aa47b13879b3228a1244512}{operator=}} (const \mbox{\hyperlink{class_raster_image_base}{Raster\+Image\+Base}} \&other)
+\item 
+size\+\_\+t \mbox{\hyperlink{class_raster_image_base_a37b47e14a128b2334e8f07e9896c6af0}{get\+Width}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{class_raster_image_base_ad496175e0a40d383d4d7919d111bd01d}{get\+Height}} () const
+\item 
+File\+Type \mbox{\hyperlink{class_raster_image_base_a8c71b5484e2a5efb73293a845e90260a}{get\+Type}} () const
+\item 
+void \mbox{\hyperlink{class_raster_image_base_a9c1bd9195289105d65235ee552a0d26d}{set\+Type}} (File\+Type t)
+\item 
+unsigned int \mbox{\hyperlink{class_raster_image_base_a8c61f4322ea8af935b74d644f4a1354d}{get\+Max\+Value}} () const
+\item 
+void \mbox{\hyperlink{class_raster_image_base_ae8bf91be8143588f721d7907a78eedf2}{set\+Max\+Value}} (unsigned int mv)
+\item 
+std\+::string \mbox{\hyperlink{class_raster_image_base_a0fd38fdf514e37b49981739b281e42fc}{get\+Name}} () const
+\item 
+void \mbox{\hyperlink{class_raster_image_base_a9fe06eae06a0723bdeff22e4eb60606f}{set\+Name}} (std\+::string s)
+\item 
+virtual void \mbox{\hyperlink{class_raster_image_base_a41d0994e072fb009bb1289e49ff3ad8b}{set\+Pixel}} (size\+\_\+t, size\+\_\+t, unsigned int)=0
+\item 
+virtual unsigned int \mbox{\hyperlink{class_raster_image_base_a2b3ec2a89d1e8f3157011faa112ba01f}{get\+Pixel}} (size\+\_\+t, size\+\_\+t) const =0
+\item 
+void \mbox{\hyperlink{class_raster_image_base_a367130eba698cd557ee470fa0c4027dd}{apply\+And\+Pop\+Transformations}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_transformation_base}{Transformation\+Base}} $\ast$ $>$ \mbox{\hyperlink{class_raster_image_base_a5daac5b84fb4a29321ad32b4abe1a0d0}{pending\+\_\+transformations\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_raster_image_base_a398aa7700dea279636d73ad3c81db00b}{get\+\_\+index}} (size\+\_\+t r, size\+\_\+t c) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_raster_image_base_a45398b116cc69a937b52b2ed8d59ab0a}\label{class_raster_image_base_a45398b116cc69a937b52b2ed8d59ab0a}} 
+std\+::string {\bfseries name\+\_\+}
+\item 
+\mbox{\Hypertarget{class_raster_image_base_af069fe1e7b1fe1f8777b87262622ecd7}\label{class_raster_image_base_af069fe1e7b1fe1f8777b87262622ecd7}} 
+size\+\_\+t {\bfseries width\+\_\+}
+\item 
+\mbox{\Hypertarget{class_raster_image_base_abe860348daa5a53c13b367f22e6737b2}\label{class_raster_image_base_abe860348daa5a53c13b367f22e6737b2}} 
+size\+\_\+t {\bfseries height\+\_\+}
+\item 
+\mbox{\Hypertarget{class_raster_image_base_a7d8c5a951769843a64bb659011a1d904}\label{class_raster_image_base_a7d8c5a951769843a64bb659011a1d904}} 
+File\+Type {\bfseries filetype\+\_\+}
+\item 
+unsigned int \mbox{\hyperlink{class_raster_image_base_aa4f69d41164e25c79c207c9f51780414}{max\+\_\+value\+\_\+}}
+\item 
+unsigned int $\ast$ \mbox{\hyperlink{class_raster_image_base_a9911b61fcb328238a40ed12044e582c3}{pixels\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_raster_image_base}{Raster\+Image\+Base}} class. This is the base class for the images. It contains data for the image and vector in which are saved the pending transformations for the image. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_raster_image_base_a1ed72da57b3832e192c3b8bb6869064e}\label{class_raster_image_base_a1ed72da57b3832e192c3b8bb6869064e}} 
+\index{RasterImageBase@{RasterImageBase}!RasterImageBase@{RasterImageBase}}
+\index{RasterImageBase@{RasterImageBase}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{RasterImageBase()}{RasterImageBase()}}
+{\footnotesize\ttfamily Raster\+Image\+Base\+::\+Raster\+Image\+Base (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+Parameter constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_raster_image_base_a367130eba698cd557ee470fa0c4027dd}\label{class_raster_image_base_a367130eba698cd557ee470fa0c4027dd}} 
+\index{RasterImageBase@{RasterImageBase}!applyAndPopTransformations@{applyAndPopTransformations}}
+\index{applyAndPopTransformations@{applyAndPopTransformations}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{applyAndPopTransformations()}{applyAndPopTransformations()}}
+{\footnotesize\ttfamily void Raster\+Image\+Base\+::apply\+And\+Pop\+Transformations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Executes all pending transformations for the image. \mbox{\Hypertarget{class_raster_image_base_a398aa7700dea279636d73ad3c81db00b}\label{class_raster_image_base_a398aa7700dea279636d73ad3c81db00b}} 
+\index{RasterImageBase@{RasterImageBase}!get\_index@{get\_index}}
+\index{get\_index@{get\_index}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{get\_index()}{get\_index()}}
+{\footnotesize\ttfamily size\+\_\+t Raster\+Image\+Base\+::get\+\_\+index (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{r,  }\item[{size\+\_\+t}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+index of pixel in r-\/th row and in c-\/th column. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raster_image_base_ad496175e0a40d383d4d7919d111bd01d}\label{class_raster_image_base_ad496175e0a40d383d4d7919d111bd01d}} 
+\index{RasterImageBase@{RasterImageBase}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily size\+\_\+t Raster\+Image\+Base\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+height of the image. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raster_image_base_a8c61f4322ea8af935b74d644f4a1354d}\label{class_raster_image_base_a8c61f4322ea8af935b74d644f4a1354d}} 
+\index{RasterImageBase@{RasterImageBase}!getMaxValue@{getMaxValue}}
+\index{getMaxValue@{getMaxValue}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{getMaxValue()}{getMaxValue()}}
+{\footnotesize\ttfamily unsigned int Raster\+Image\+Base\+::get\+Max\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+maximum value of colors in the image. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raster_image_base_a0fd38fdf514e37b49981739b281e42fc}\label{class_raster_image_base_a0fd38fdf514e37b49981739b281e42fc}} 
+\index{RasterImageBase@{RasterImageBase}!getName@{getName}}
+\index{getName@{getName}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Raster\+Image\+Base\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+name of the image. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raster_image_base_a2b3ec2a89d1e8f3157011faa112ba01f}\label{class_raster_image_base_a2b3ec2a89d1e8f3157011faa112ba01f}} 
+\index{RasterImageBase@{RasterImageBase}!getPixel@{getPixel}}
+\index{getPixel@{getPixel}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{getPixel()}{getPixel()}}
+{\footnotesize\ttfamily virtual unsigned int Raster\+Image\+Base\+::get\+Pixel (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{,  }\item[{size\+\_\+t}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyReturn}{Returns}
+value of pixel in the image. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_raster_image_a36ac29b5e479bfb3d1372914b8b236e5}{Raster\+Image}}.
+
+\mbox{\Hypertarget{class_raster_image_base_a8c71b5484e2a5efb73293a845e90260a}\label{class_raster_image_base_a8c71b5484e2a5efb73293a845e90260a}} 
+\index{RasterImageBase@{RasterImageBase}!getType@{getType}}
+\index{getType@{getType}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily File\+Type Raster\+Image\+Base\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+type of the image. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raster_image_base_a37b47e14a128b2334e8f07e9896c6af0}\label{class_raster_image_base_a37b47e14a128b2334e8f07e9896c6af0}} 
+\index{RasterImageBase@{RasterImageBase}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily size\+\_\+t Raster\+Image\+Base\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+width of the image. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_raster_image_base_a9bbf32c70aa47b13879b3228a1244512}\label{class_raster_image_base_a9bbf32c70aa47b13879b3228a1244512}} 
+\index{RasterImageBase@{RasterImageBase}!operator=@{operator=}}
+\index{operator=@{operator=}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_raster_image_base}{Raster\+Image\+Base}} \& Raster\+Image\+Base\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_raster_image_base}{Raster\+Image\+Base}} \&}]{other }\end{DoxyParamCaption})}
+
+Copy assignment operator. \mbox{\Hypertarget{class_raster_image_base_ae8bf91be8143588f721d7907a78eedf2}\label{class_raster_image_base_ae8bf91be8143588f721d7907a78eedf2}} 
+\index{RasterImageBase@{RasterImageBase}!setMaxValue@{setMaxValue}}
+\index{setMaxValue@{setMaxValue}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{setMaxValue()}{setMaxValue()}}
+{\footnotesize\ttfamily void Raster\+Image\+Base\+::set\+Max\+Value (\begin{DoxyParamCaption}\item[{unsigned int}]{mv }\end{DoxyParamCaption})}
+
+@set maximum value of colors in the image. \mbox{\Hypertarget{class_raster_image_base_a9fe06eae06a0723bdeff22e4eb60606f}\label{class_raster_image_base_a9fe06eae06a0723bdeff22e4eb60606f}} 
+\index{RasterImageBase@{RasterImageBase}!setName@{setName}}
+\index{setName@{setName}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Raster\+Image\+Base\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{s }\end{DoxyParamCaption})}
+
+@set name of the image. \mbox{\Hypertarget{class_raster_image_base_a41d0994e072fb009bb1289e49ff3ad8b}\label{class_raster_image_base_a41d0994e072fb009bb1289e49ff3ad8b}} 
+\index{RasterImageBase@{RasterImageBase}!setPixel@{setPixel}}
+\index{setPixel@{setPixel}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{setPixel()}{setPixel()}}
+{\footnotesize\ttfamily virtual void Raster\+Image\+Base\+::set\+Pixel (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{,  }\item[{size\+\_\+t}]{,  }\item[{unsigned int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+@set value of given pixel in the image. 
+
+Implemented in \mbox{\hyperlink{class_raster_image_a1eb17fa27096772a63e978dd8b982db4}{Raster\+Image}}.
+
+\mbox{\Hypertarget{class_raster_image_base_a9c1bd9195289105d65235ee552a0d26d}\label{class_raster_image_base_a9c1bd9195289105d65235ee552a0d26d}} 
+\index{RasterImageBase@{RasterImageBase}!setType@{setType}}
+\index{setType@{setType}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Raster\+Image\+Base\+::set\+Type (\begin{DoxyParamCaption}\item[{File\+Type}]{t }\end{DoxyParamCaption})}
+
+@set type of the image. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_raster_image_base_aa4f69d41164e25c79c207c9f51780414}\label{class_raster_image_base_aa4f69d41164e25c79c207c9f51780414}} 
+\index{RasterImageBase@{RasterImageBase}!max\_value\_@{max\_value\_}}
+\index{max\_value\_@{max\_value\_}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{max\_value\_}{max\_value\_}}
+{\footnotesize\ttfamily unsigned int Raster\+Image\+Base\+::max\+\_\+value\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Maximum value of the colors in the image. \mbox{\Hypertarget{class_raster_image_base_a5daac5b84fb4a29321ad32b4abe1a0d0}\label{class_raster_image_base_a5daac5b84fb4a29321ad32b4abe1a0d0}} 
+\index{RasterImageBase@{RasterImageBase}!pending\_transformations\_@{pending\_transformations\_}}
+\index{pending\_transformations\_@{pending\_transformations\_}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{pending\_transformations\_}{pending\_transformations\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_transformation_base}{Transformation\+Base}}$\ast$$>$ Raster\+Image\+Base\+::pending\+\_\+transformations\+\_\+}
+
+Contains the pending transformations for the image. \mbox{\Hypertarget{class_raster_image_base_a9911b61fcb328238a40ed12044e582c3}\label{class_raster_image_base_a9911b61fcb328238a40ed12044e582c3}} 
+\index{RasterImageBase@{RasterImageBase}!pixels\_@{pixels\_}}
+\index{pixels\_@{pixels\_}!RasterImageBase@{RasterImageBase}}
+\doxysubsubsection{\texorpdfstring{pixels\_}{pixels\_}}
+{\footnotesize\ttfamily unsigned int$\ast$ Raster\+Image\+Base\+::pixels\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Array of all pixels in the image. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Raster\+Image\+Base.\+h\item 
+Raster\+Image\+Base.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,19 @@
+\hypertarget{_session_command_base_8h_source}{}\doxysection{Session\+Command\+Base.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{3 \textcolor{keyword}{class }\mbox{\hyperlink{class_session}{Session}};}
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_session_command_base}{SessionCommandBase}} \{}
+\DoxyCodeLine{9 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_session}{Session}}* \mbox{\hyperlink{class_session_command_base_a52d1fd07179d2eec3b007804180cc697}{session\_}};}
+\DoxyCodeLine{11     std::string \mbox{\hyperlink{class_session_command_base_a5e7ba444f313d028cfc515bd1ec7233f}{success\_message\_}};}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_session_command_base_a28342119f3e3222ee01066b94a9a26c1}{SessionCommandBase}}(\mbox{\hyperlink{class_session}{Session}}* ses): \mbox{\hyperlink{class_session_command_base_a52d1fd07179d2eec3b007804180cc697}{session\_}}(ses) \{\}}
+\DoxyCodeLine{14     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} execute() = 0;}
+\DoxyCodeLine{15     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} revert() = 0;}
+\DoxyCodeLine{16     std::string \mbox{\hyperlink{class_session_command_base_a175074901dd26868058ad31c3586e603}{get\_success\_msg}}() \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_session_command_base_a5e7ba444f313d028cfc515bd1ec7233f}{success\_message\_}}; \} }
+\DoxyCodeLine{17 \};}
+\DoxyCodeLine{18 }
+
+\end{DoxyCode}

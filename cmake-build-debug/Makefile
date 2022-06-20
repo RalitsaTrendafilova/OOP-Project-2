@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\User\Desktop\toshko\RasterImageCL-main\RasterImageCL
+CMAKE_SOURCE_DIR = C:\Users\User\Desktop\oop\OOP-Project-2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\User\Desktop\toshko\RasterImageCL-main\RasterImageCL\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\User\Desktop\oop\OOP-Project-2\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\toshko\RasterImageCL-main\RasterImageCL\cmake-build-debug\CMakeFiles C:\Users\User\Desktop\toshko\RasterImageCL-main\RasterImageCL\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\oop\OOP-Project-2\cmake-build-debug\CMakeFiles C:\Users\User\Desktop\oop\OOP-Project-2\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\toshko\RasterImageCL-main\RasterImageCL\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\oop\OOP-Project-2\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named RasterImageCL
+# Target rules for targets named OOP_Project_2
 
 # Build rule for target.
-RasterImageCL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 RasterImageCL
-.PHONY : RasterImageCL
+OOP_Project_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 OOP_Project_2
+.PHONY : OOP_Project_2
 
 # fast build rule for target.
-RasterImageCL/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/build
-.PHONY : RasterImageCL/fast
+OOP_Project_2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/build
+.PHONY : OOP_Project_2/fast
 
 AddImageToSession.obj: AddImageToSession.cpp.obj
 .PHONY : AddImageToSession.obj
 
 # target to build an object file
 AddImageToSession.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/AddImageToSession.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/AddImageToSession.cpp.obj
 .PHONY : AddImageToSession.cpp.obj
 
 AddImageToSession.i: AddImageToSession.cpp.i
@@ -141,7 +141,7 @@ AddImageToSession.i: AddImageToSession.cpp.i
 
 # target to preprocess a source file
 AddImageToSession.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/AddImageToSession.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/AddImageToSession.cpp.i
 .PHONY : AddImageToSession.cpp.i
 
 AddImageToSession.s: AddImageToSession.cpp.s
@@ -149,7 +149,7 @@ AddImageToSession.s: AddImageToSession.cpp.s
 
 # target to generate assembly for a file
 AddImageToSession.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/AddImageToSession.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/AddImageToSession.cpp.s
 .PHONY : AddImageToSession.cpp.s
 
 AddTransformationToImageInSessionCommand.obj: AddTransformationToImageInSessionCommand.cpp.obj
@@ -157,7 +157,7 @@ AddTransformationToImageInSessionCommand.obj: AddTransformationToImageInSessionC
 
 # target to build an object file
 AddTransformationToImageInSessionCommand.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/AddTransformationToImageInSessionCommand.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/AddTransformationToImageInSessionCommand.cpp.obj
 .PHONY : AddTransformationToImageInSessionCommand.cpp.obj
 
 AddTransformationToImageInSessionCommand.i: AddTransformationToImageInSessionCommand.cpp.i
@@ -165,7 +165,7 @@ AddTransformationToImageInSessionCommand.i: AddTransformationToImageInSessionCom
 
 # target to preprocess a source file
 AddTransformationToImageInSessionCommand.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/AddTransformationToImageInSessionCommand.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/AddTransformationToImageInSessionCommand.cpp.i
 .PHONY : AddTransformationToImageInSessionCommand.cpp.i
 
 AddTransformationToImageInSessionCommand.s: AddTransformationToImageInSessionCommand.cpp.s
@@ -173,7 +173,7 @@ AddTransformationToImageInSessionCommand.s: AddTransformationToImageInSessionCom
 
 # target to generate assembly for a file
 AddTransformationToImageInSessionCommand.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/AddTransformationToImageInSessionCommand.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/AddTransformationToImageInSessionCommand.cpp.s
 .PHONY : AddTransformationToImageInSessionCommand.cpp.s
 
 ApplicationController.obj: ApplicationController.cpp.obj
@@ -181,7 +181,7 @@ ApplicationController.obj: ApplicationController.cpp.obj
 
 # target to build an object file
 ApplicationController.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplicationController.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplicationController.cpp.obj
 .PHONY : ApplicationController.cpp.obj
 
 ApplicationController.i: ApplicationController.cpp.i
@@ -189,7 +189,7 @@ ApplicationController.i: ApplicationController.cpp.i
 
 # target to preprocess a source file
 ApplicationController.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplicationController.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplicationController.cpp.i
 .PHONY : ApplicationController.cpp.i
 
 ApplicationController.s: ApplicationController.cpp.s
@@ -197,7 +197,7 @@ ApplicationController.s: ApplicationController.cpp.s
 
 # target to generate assembly for a file
 ApplicationController.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplicationController.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplicationController.cpp.s
 .PHONY : ApplicationController.cpp.s
 
 ApplyGrayscale.obj: ApplyGrayscale.cpp.obj
@@ -205,7 +205,7 @@ ApplyGrayscale.obj: ApplyGrayscale.cpp.obj
 
 # target to build an object file
 ApplyGrayscale.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplyGrayscale.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplyGrayscale.cpp.obj
 .PHONY : ApplyGrayscale.cpp.obj
 
 ApplyGrayscale.i: ApplyGrayscale.cpp.i
@@ -213,7 +213,7 @@ ApplyGrayscale.i: ApplyGrayscale.cpp.i
 
 # target to preprocess a source file
 ApplyGrayscale.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplyGrayscale.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplyGrayscale.cpp.i
 .PHONY : ApplyGrayscale.cpp.i
 
 ApplyGrayscale.s: ApplyGrayscale.cpp.s
@@ -221,7 +221,7 @@ ApplyGrayscale.s: ApplyGrayscale.cpp.s
 
 # target to generate assembly for a file
 ApplyGrayscale.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplyGrayscale.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplyGrayscale.cpp.s
 .PHONY : ApplyGrayscale.cpp.s
 
 ApplyMonochrome.obj: ApplyMonochrome.cpp.obj
@@ -229,7 +229,7 @@ ApplyMonochrome.obj: ApplyMonochrome.cpp.obj
 
 # target to build an object file
 ApplyMonochrome.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplyMonochrome.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplyMonochrome.cpp.obj
 .PHONY : ApplyMonochrome.cpp.obj
 
 ApplyMonochrome.i: ApplyMonochrome.cpp.i
@@ -237,7 +237,7 @@ ApplyMonochrome.i: ApplyMonochrome.cpp.i
 
 # target to preprocess a source file
 ApplyMonochrome.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplyMonochrome.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplyMonochrome.cpp.i
 .PHONY : ApplyMonochrome.cpp.i
 
 ApplyMonochrome.s: ApplyMonochrome.cpp.s
@@ -245,7 +245,7 @@ ApplyMonochrome.s: ApplyMonochrome.cpp.s
 
 # target to generate assembly for a file
 ApplyMonochrome.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplyMonochrome.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplyMonochrome.cpp.s
 .PHONY : ApplyMonochrome.cpp.s
 
 ApplyNegative.obj: ApplyNegative.cpp.obj
@@ -253,7 +253,7 @@ ApplyNegative.obj: ApplyNegative.cpp.obj
 
 # target to build an object file
 ApplyNegative.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplyNegative.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplyNegative.cpp.obj
 .PHONY : ApplyNegative.cpp.obj
 
 ApplyNegative.i: ApplyNegative.cpp.i
@@ -261,7 +261,7 @@ ApplyNegative.i: ApplyNegative.cpp.i
 
 # target to preprocess a source file
 ApplyNegative.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplyNegative.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplyNegative.cpp.i
 .PHONY : ApplyNegative.cpp.i
 
 ApplyNegative.s: ApplyNegative.cpp.s
@@ -269,7 +269,7 @@ ApplyNegative.s: ApplyNegative.cpp.s
 
 # target to generate assembly for a file
 ApplyNegative.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplyNegative.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplyNegative.cpp.s
 .PHONY : ApplyNegative.cpp.s
 
 ApplyRotation.obj: ApplyRotation.cpp.obj
@@ -277,7 +277,7 @@ ApplyRotation.obj: ApplyRotation.cpp.obj
 
 # target to build an object file
 ApplyRotation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplyRotation.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplyRotation.cpp.obj
 .PHONY : ApplyRotation.cpp.obj
 
 ApplyRotation.i: ApplyRotation.cpp.i
@@ -285,7 +285,7 @@ ApplyRotation.i: ApplyRotation.cpp.i
 
 # target to preprocess a source file
 ApplyRotation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplyRotation.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplyRotation.cpp.i
 .PHONY : ApplyRotation.cpp.i
 
 ApplyRotation.s: ApplyRotation.cpp.s
@@ -293,7 +293,7 @@ ApplyRotation.s: ApplyRotation.cpp.s
 
 # target to generate assembly for a file
 ApplyRotation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/ApplyRotation.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/ApplyRotation.cpp.s
 .PHONY : ApplyRotation.cpp.s
 
 MakeCollageCommand.obj: MakeCollageCommand.cpp.obj
@@ -301,7 +301,7 @@ MakeCollageCommand.obj: MakeCollageCommand.cpp.obj
 
 # target to build an object file
 MakeCollageCommand.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/MakeCollageCommand.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/MakeCollageCommand.cpp.obj
 .PHONY : MakeCollageCommand.cpp.obj
 
 MakeCollageCommand.i: MakeCollageCommand.cpp.i
@@ -309,7 +309,7 @@ MakeCollageCommand.i: MakeCollageCommand.cpp.i
 
 # target to preprocess a source file
 MakeCollageCommand.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/MakeCollageCommand.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/MakeCollageCommand.cpp.i
 .PHONY : MakeCollageCommand.cpp.i
 
 MakeCollageCommand.s: MakeCollageCommand.cpp.s
@@ -317,7 +317,7 @@ MakeCollageCommand.s: MakeCollageCommand.cpp.s
 
 # target to generate assembly for a file
 MakeCollageCommand.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/MakeCollageCommand.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/MakeCollageCommand.cpp.s
 .PHONY : MakeCollageCommand.cpp.s
 
 RasterImage.obj: RasterImage.cpp.obj
@@ -325,7 +325,7 @@ RasterImage.obj: RasterImage.cpp.obj
 
 # target to build an object file
 RasterImage.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/RasterImage.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/RasterImage.cpp.obj
 .PHONY : RasterImage.cpp.obj
 
 RasterImage.i: RasterImage.cpp.i
@@ -333,7 +333,7 @@ RasterImage.i: RasterImage.cpp.i
 
 # target to preprocess a source file
 RasterImage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/RasterImage.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/RasterImage.cpp.i
 .PHONY : RasterImage.cpp.i
 
 RasterImage.s: RasterImage.cpp.s
@@ -341,7 +341,7 @@ RasterImage.s: RasterImage.cpp.s
 
 # target to generate assembly for a file
 RasterImage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/RasterImage.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/RasterImage.cpp.s
 .PHONY : RasterImage.cpp.s
 
 RasterImageBase.obj: RasterImageBase.cpp.obj
@@ -349,7 +349,7 @@ RasterImageBase.obj: RasterImageBase.cpp.obj
 
 # target to build an object file
 RasterImageBase.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/RasterImageBase.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/RasterImageBase.cpp.obj
 .PHONY : RasterImageBase.cpp.obj
 
 RasterImageBase.i: RasterImageBase.cpp.i
@@ -357,7 +357,7 @@ RasterImageBase.i: RasterImageBase.cpp.i
 
 # target to preprocess a source file
 RasterImageBase.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/RasterImageBase.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/RasterImageBase.cpp.i
 .PHONY : RasterImageBase.cpp.i
 
 RasterImageBase.s: RasterImageBase.cpp.s
@@ -365,7 +365,7 @@ RasterImageBase.s: RasterImageBase.cpp.s
 
 # target to generate assembly for a file
 RasterImageBase.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/RasterImageBase.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/RasterImageBase.cpp.s
 .PHONY : RasterImageBase.cpp.s
 
 RasterImageCL.obj: RasterImageCL.cpp.obj
@@ -373,7 +373,7 @@ RasterImageCL.obj: RasterImageCL.cpp.obj
 
 # target to build an object file
 RasterImageCL.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/RasterImageCL.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/RasterImageCL.cpp.obj
 .PHONY : RasterImageCL.cpp.obj
 
 RasterImageCL.i: RasterImageCL.cpp.i
@@ -381,7 +381,7 @@ RasterImageCL.i: RasterImageCL.cpp.i
 
 # target to preprocess a source file
 RasterImageCL.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/RasterImageCL.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/RasterImageCL.cpp.i
 .PHONY : RasterImageCL.cpp.i
 
 RasterImageCL.s: RasterImageCL.cpp.s
@@ -389,7 +389,7 @@ RasterImageCL.s: RasterImageCL.cpp.s
 
 # target to generate assembly for a file
 RasterImageCL.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/RasterImageCL.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/RasterImageCL.cpp.s
 .PHONY : RasterImageCL.cpp.s
 
 RasterImageRW.obj: RasterImageRW.cpp.obj
@@ -397,7 +397,7 @@ RasterImageRW.obj: RasterImageRW.cpp.obj
 
 # target to build an object file
 RasterImageRW.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/RasterImageRW.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/RasterImageRW.cpp.obj
 .PHONY : RasterImageRW.cpp.obj
 
 RasterImageRW.i: RasterImageRW.cpp.i
@@ -405,7 +405,7 @@ RasterImageRW.i: RasterImageRW.cpp.i
 
 # target to preprocess a source file
 RasterImageRW.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/RasterImageRW.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/RasterImageRW.cpp.i
 .PHONY : RasterImageRW.cpp.i
 
 RasterImageRW.s: RasterImageRW.cpp.s
@@ -413,7 +413,7 @@ RasterImageRW.s: RasterImageRW.cpp.s
 
 # target to generate assembly for a file
 RasterImageRW.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/RasterImageRW.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/RasterImageRW.cpp.s
 .PHONY : RasterImageRW.cpp.s
 
 Session.obj: Session.cpp.obj
@@ -421,7 +421,7 @@ Session.obj: Session.cpp.obj
 
 # target to build an object file
 Session.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/Session.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/Session.cpp.obj
 .PHONY : Session.cpp.obj
 
 Session.i: Session.cpp.i
@@ -429,7 +429,7 @@ Session.i: Session.cpp.i
 
 # target to preprocess a source file
 Session.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/Session.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/Session.cpp.i
 .PHONY : Session.cpp.i
 
 Session.s: Session.cpp.s
@@ -437,7 +437,7 @@ Session.s: Session.cpp.s
 
 # target to generate assembly for a file
 Session.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RasterImageCL.dir\build.make CMakeFiles/RasterImageCL.dir/Session.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP_Project_2.dir\build.make CMakeFiles/OOP_Project_2.dir/Session.cpp.s
 .PHONY : Session.cpp.s
 
 # Help Target
@@ -448,7 +448,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... RasterImageCL
+	@echo ... OOP_Project_2
 	@echo ... AddImageToSession.obj
 	@echo ... AddImageToSession.i
 	@echo ... AddImageToSession.s

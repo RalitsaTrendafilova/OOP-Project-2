@@ -1,0 +1,63 @@
+\hypertarget{class_add_image_to_session}{}\doxysection{Add\+Image\+To\+Session Class Reference}
+\label{class_add_image_to_session}\index{AddImageToSession@{AddImageToSession}}
+
+
+{\ttfamily \#include $<$Add\+Image\+To\+Session.\+h$>$}
+
+Inheritance diagram for Add\+Image\+To\+Session\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_add_image_to_session}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_add_image_to_session_a813e310db74d8f71171f01e6ec3ddf74}{Add\+Image\+To\+Session}} (\mbox{\hyperlink{class_session}{Session}} $\ast$target, std\+::string filename)
+\item 
+void \mbox{\hyperlink{class_add_image_to_session_a92290f56aa397e5f8aed45a47d936cbf}{execute}} () override
+\item 
+void \mbox{\hyperlink{class_add_image_to_session_a0a2274ec5430bae09a68b019a299ed75}{revert}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_add_image_to_session}{Add\+Image\+To\+Session}} class. It is used to add image in the active session. It can also remove a given image from the session. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_add_image_to_session_a813e310db74d8f71171f01e6ec3ddf74}\label{class_add_image_to_session_a813e310db74d8f71171f01e6ec3ddf74}} 
+\index{AddImageToSession@{AddImageToSession}!AddImageToSession@{AddImageToSession}}
+\index{AddImageToSession@{AddImageToSession}!AddImageToSession@{AddImageToSession}}
+\doxysubsubsection{\texorpdfstring{AddImageToSession()}{AddImageToSession()}}
+{\footnotesize\ttfamily Add\+Image\+To\+Session\+::\+Add\+Image\+To\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_session}{Session}} $\ast$}]{target,  }\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+Parameter constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_add_image_to_session_a92290f56aa397e5f8aed45a47d936cbf}\label{class_add_image_to_session_a92290f56aa397e5f8aed45a47d936cbf}} 
+\index{AddImageToSession@{AddImageToSession}!execute@{execute}}
+\index{execute@{execute}!AddImageToSession@{AddImageToSession}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Add\+Image\+To\+Session\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Adds the image in the active session. 
+
+Implements \mbox{\hyperlink{class_session_command_base}{Session\+Command\+Base}}.
+
+\mbox{\Hypertarget{class_add_image_to_session_a0a2274ec5430bae09a68b019a299ed75}\label{class_add_image_to_session_a0a2274ec5430bae09a68b019a299ed75}} 
+\index{AddImageToSession@{AddImageToSession}!revert@{revert}}
+\index{revert@{revert}!AddImageToSession@{AddImageToSession}}
+\doxysubsubsection{\texorpdfstring{revert()}{revert()}}
+{\footnotesize\ttfamily void Add\+Image\+To\+Session\+::revert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Removes the last image in the session when undo is used and there are no pending transformations. 
+
+Implements \mbox{\hyperlink{class_session_command_base}{Session\+Command\+Base}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Add\+Image\+To\+Session.\+h\item 
+Add\+Image\+To\+Session.\+cpp\end{DoxyCompactItemize}

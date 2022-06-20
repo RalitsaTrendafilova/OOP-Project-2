@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['execute_0',['execute',['../class_add_image_to_session.html#a92290f56aa397e5f8aed45a47d936cbf',1,'AddImageToSession::execute()'],['../class_add_transformation_to_image_in_session_command.html#aa2f9a888c90214e079bc4f5e488361cd',1,'AddTransformationToImageInSessionCommand::execute()'],['../class_apply_grayscale.html#a18486a8af45a3df11492ccdd33557640',1,'ApplyGrayscale::execute()'],['../class_apply_monochrome.html#a6c96f7c9bcb993f65ef9cdd498c420bb',1,'ApplyMonochrome::execute()'],['../class_apply_negative.html#a0a5eb1e4e488b5e35bff4a3c2c4f8c33',1,'ApplyNegative::execute()'],['../class_apply_rotation.html#a5f1e1c665f8f225d294115a682b38905',1,'ApplyRotation::execute()'],['../class_make_collage_command.html#acd77db8717b50beea9b833215270cf1f',1,'MakeCollageCommand::execute()'],['../class_transformation_base.html#a72a8ea5a1b38c138c1940fe549ce096b',1,'TransformationBase::execute()']]]
+];

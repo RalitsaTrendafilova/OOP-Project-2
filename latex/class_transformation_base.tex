@@ -1,0 +1,50 @@
+\hypertarget{class_transformation_base}{}\doxysection{Transformation\+Base Class Reference}
+\label{class_transformation_base}\index{TransformationBase@{TransformationBase}}
+
+
+{\ttfamily \#include $<$Transformation\+Base.\+h$>$}
+
+Inheritance diagram for Transformation\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_transformation_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_transformation_base_af6eaef9d777279ce1ca17bbc26aa26fb}\label{class_transformation_base_af6eaef9d777279ce1ca17bbc26aa26fb}} 
+const std\+::string \& {\bfseries get\+Name} ()
+\item 
+virtual void \mbox{\hyperlink{class_transformation_base_a72a8ea5a1b38c138c1940fe549ce096b}{execute}} (\mbox{\hyperlink{class_raster_image_base}{Raster\+Image\+Base}} $\ast$)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_transformation_base_aeac826b003467cd919f3506362547b90}\label{class_transformation_base_aeac826b003467cd919f3506362547b90}} 
+std\+::string {\bfseries name\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_transformation_base}{Transformation\+Base}} class. This is the base class for the transformations\+: grayscale, monochrome, negative, rotate. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_transformation_base_a72a8ea5a1b38c138c1940fe549ce096b}\label{class_transformation_base_a72a8ea5a1b38c138c1940fe549ce096b}} 
+\index{TransformationBase@{TransformationBase}!execute@{execute}}
+\index{execute@{execute}!TransformationBase@{TransformationBase}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void Transformation\+Base\+::execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_raster_image_base}{Raster\+Image\+Base}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyReturn}{Returns}
+the name of the transformation. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_apply_grayscale_a18486a8af45a3df11492ccdd33557640}{Apply\+Grayscale}}, \mbox{\hyperlink{class_apply_monochrome_a6c96f7c9bcb993f65ef9cdd498c420bb}{Apply\+Monochrome}}, \mbox{\hyperlink{class_apply_negative_a0a5eb1e4e488b5e35bff4a3c2c4f8c33}{Apply\+Negative}}, and \mbox{\hyperlink{class_apply_rotation_a5f1e1c665f8f225d294115a682b38905}{Apply\+Rotation}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Transformation\+Base.\+h\end{DoxyCompactItemize}

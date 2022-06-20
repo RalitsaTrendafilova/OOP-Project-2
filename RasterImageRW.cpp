@@ -1,5 +1,6 @@
 #include "RasterImageRW.h"
 #include "RasterImage.h"
+#include <cstring>
 
 bool RasterImageReader::is_in_binary(FileType t) {
     return t == FileType::P4 || t == FileType::P5 || t == FileType::P6;
@@ -9,7 +10,7 @@ unsigned int RasterImageReader::get_color_from_asci (std::ifstream& stream, File
 		//Monochrome
 		char asci_val;
 		stream >> asci_val;
-		bool val = asci_val - 48;
+		bool val = asci_val - '0';
 		if (val) {
 			//Black
 			return 0x000000ff;
@@ -17,15 +18,11 @@ unsigned int RasterImageReader::get_color_from_asci (std::ifstream& stream, File
 			//White
 			return 0xffffffff;
 		}
-	}
-	else if (type == FileType::P2) {
+	} else if (type == FileType::P2) {
 		std::string str;
 		stream >> str;
 		//Grayscale
 		int grayscale_val = std::stoi(str);
-		if (grayscale_val >= 3) {
-			int a = 3;
-		}
 		float whiteness_percent = (float)grayscale_val / (float)max_value_;
 		unsigned short channel_shade = 255 * whiteness_percent;
 		unsigned int final_color = channel_shade << 24 | channel_shade << 16 | channel_shade << 8 | 0xFF;
@@ -45,15 +42,12 @@ unsigned int RasterImageReader::get_color_from_asci (std::ifstream& stream, File
 void RasterImageReader::write_asci_from_pixel(std::ofstream& stream, const RasterImageBase* img_base, unsigned int pixel) {
 	if (img_base->getType() == FileType::P1) {
 		//Monochrome
-		//Only the least significant bits contribute to the alpha channel
-		//therefore every number higher than 255 or 0x000000FF will have color
-		if (pixel>255) {
+		if (pixel > 255) {
 			stream << std::to_string(1);
 		} else {
 			stream << std::to_string(0);
 		}
-	}
-	else if (img_base->getType() == FileType::P2) {
+	} else if (img_base->getType() == FileType::P2) {
 		//Grayscale
 		unsigned short shade_val = ( pixel & RED_BITMASK ) >> 24;
 		unsigned short val;
@@ -85,34 +79,32 @@ FileType RasterImageReader::get_filetype_from_name(const std::string &f) {
     }
     return FileType::P3;
 }
-
-RasterImageBase* RasterImageReader::read(const char* filename) {
+RasterImageBase* RasterImageReader::read(const std::string &filename) {
 	RasterImageBase* raster_image = nullptr;
-	std::ifstream ifstream{ filename };
+	std::ifstream file(filename);
 
 	FileType file_type;
 	size_t width, height;
 	int max_value_ = 1;
-	if (ifstream) {
+	if (file) {
 		char c;
-		ifstream >> c;
+		file >> c;
 		//First char of the file should be the letter P
 		if (c == 'P') {
-			ifstream >> c;
-			short magic_number = c - 48;
+			file >> c;
+			short magic_number = c - '0';
 			//next character determines the magic number
 			//Between 1 and 6
 			if (magic_number >= 1 && magic_number <= 6) {
 				file_type = (FileType)(magic_number - 1);
 				//Read the dimension of the raster image
 
-				ifstream >> width;
-				ifstream >> height;
-
+				file >> width;
+				file >> height;
 
 				//Read max value if not monochrome
 				if (file_type != FileType::P1) {
-					ifstream >> max_value_;
+					file >> max_value_;
 				}
 
 				//Init array
@@ -123,60 +115,54 @@ RasterImageBase* RasterImageReader::read(const char* filename) {
 				if (!is_in_binary(file_type)) {
 					for (size_t i = 0; i < height; i++) {
 						for (size_t j = 0; j < width; j++) {
-							raster_image->setPixel(i, j, get_color_from_asci(ifstream, file_type, max_value_));
+							raster_image->setPixel(i, j, get_color_from_asci(file, file_type, max_value_));
 						}
 					}
 				}
+                file.close();
 				return raster_image;
-			}
-			else {
+			} else {
 				throw std::runtime_error("Unrecognized File Type!");
 			}
 		}
-
-
-	}
-	else {
+	} else {
 		throw std::runtime_error("Unable to open file!");
 	}
-	ifstream.close();
+	file.close();
+    return raster_image;
 }
-void RasterImageReader::save( RasterImageBase* raster_image, const char* filename) {
+void RasterImageReader::save( RasterImageBase* raster_image, const std::string& filename) {
 	std::string used_filename;
-	if (filename == "") {
+	if (filename.empty()) {
 		used_filename = raster_image->getName();
 	} else {
 		used_filename = filename;
 	}
-
-	std::ofstream ofstream(used_filename);
-	if (ofstream) {
-		//Changed file type to be of desired file
-		if (raster_image->getType() != get_filetype_from_name(used_filename)) {
-			throw std::invalid_argument("Mismatch in original file type and output file type! \n");
-		}
-
-		ofstream << 'P' << std::to_string((int)raster_image->getType() + 1) <<"\n";
-		ofstream << std::to_string(raster_image->getWidth())  << " " << 
+    if (!used_filename.empty() && raster_image->getType() != get_filetype_from_name(used_filename)) {
+        throw std::invalid_argument("Mismatch in original file type and output file type! \n");
+    }
+	std::ofstream file(used_filename);
+	if (file) {
+		file << 'P' << std::to_string((int)raster_image->getType() + 1) <<"\n";
+		file << std::to_string(raster_image->getWidth())  << " " << 
 			std::to_string(raster_image->getHeight()) << "\n";
 
 		//Write max value if not monochrome
 		if (raster_image->getType() != FileType::P1) {
-			ofstream << std::to_string(raster_image->getMaxValue()) << "\n";
+			file << std::to_string(raster_image->getMaxValue()) << "\n";
 		}
 		if (!is_in_binary(raster_image->getType())) {
 			for (size_t i = 0; i < raster_image->getHeight(); i++) {
 				for (size_t j = 0; j < raster_image->getWidth(); j++) {
-					write_asci_from_pixel(ofstream, raster_image, raster_image->getPixel(i,j));
-					ofstream << " ";
+					write_asci_from_pixel(file, raster_image, raster_image->getPixel(i,j));
+					file << " ";
 				}
-				ofstream << "\n";
+				file << "\n";
 			}
 		}
 	}
-	ofstream.close();
+	file.close();
 }
-
 
 
 

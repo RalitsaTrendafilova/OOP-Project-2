@@ -1,0 +1,94 @@
+\hypertarget{class_session_command_base}{}\doxysection{Session\+Command\+Base Class Reference}
+\label{class_session_command_base}\index{SessionCommandBase@{SessionCommandBase}}
+
+
+{\ttfamily \#include $<$Session\+Command\+Base.\+h$>$}
+
+Inheritance diagram for Session\+Command\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.319199cm]{class_session_command_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_session_command_base_a28342119f3e3222ee01066b94a9a26c1}{Session\+Command\+Base}} (\mbox{\hyperlink{class_session}{Session}} $\ast$ses)
+\item 
+virtual void \mbox{\hyperlink{class_session_command_base_a9a4e717c13271a433228f1f6c55c130a}{execute}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_session_command_base_aaba73f2b2da71d4dc8e6b5e6d9eaae3c}{revert}} ()=0
+\item 
+std\+::string \mbox{\hyperlink{class_session_command_base_a175074901dd26868058ad31c3586e603}{get\+\_\+success\+\_\+msg}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_session}{Session}} $\ast$ \mbox{\hyperlink{class_session_command_base_a52d1fd07179d2eec3b007804180cc697}{session\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{class_session_command_base_a5e7ba444f313d028cfc515bd1ec7233f}{success\+\_\+message\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_session_command_base}{Session\+Command\+Base}} class. This is the base class for the commands\+: add image to session, make collage, add transformation to image in session. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_session_command_base_a28342119f3e3222ee01066b94a9a26c1}\label{class_session_command_base_a28342119f3e3222ee01066b94a9a26c1}} 
+\index{SessionCommandBase@{SessionCommandBase}!SessionCommandBase@{SessionCommandBase}}
+\index{SessionCommandBase@{SessionCommandBase}!SessionCommandBase@{SessionCommandBase}}
+\doxysubsubsection{\texorpdfstring{SessionCommandBase()}{SessionCommandBase()}}
+{\footnotesize\ttfamily Session\+Command\+Base\+::\+Session\+Command\+Base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_session}{Session}} $\ast$}]{ses }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Parameter constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_session_command_base_a9a4e717c13271a433228f1f6c55c130a}\label{class_session_command_base_a9a4e717c13271a433228f1f6c55c130a}} 
+\index{SessionCommandBase@{SessionCommandBase}!execute@{execute}}
+\index{execute@{execute}!SessionCommandBase@{SessionCommandBase}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void Session\+Command\+Base\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_make_collage_command_acd77db8717b50beea9b833215270cf1f}{Make\+Collage\+Command}}, \mbox{\hyperlink{class_add_image_to_session_a92290f56aa397e5f8aed45a47d936cbf}{Add\+Image\+To\+Session}}, and \mbox{\hyperlink{class_add_transformation_to_image_in_session_command_aa2f9a888c90214e079bc4f5e488361cd}{Add\+Transformation\+To\+Image\+In\+Session\+Command}}.
+
+\mbox{\Hypertarget{class_session_command_base_a175074901dd26868058ad31c3586e603}\label{class_session_command_base_a175074901dd26868058ad31c3586e603}} 
+\index{SessionCommandBase@{SessionCommandBase}!get\_success\_msg@{get\_success\_msg}}
+\index{get\_success\_msg@{get\_success\_msg}!SessionCommandBase@{SessionCommandBase}}
+\doxysubsubsection{\texorpdfstring{get\_success\_msg()}{get\_success\_msg()}}
+{\footnotesize\ttfamily std\+::string Session\+Command\+Base\+::get\+\_\+success\+\_\+msg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the success message. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_session_command_base_aaba73f2b2da71d4dc8e6b5e6d9eaae3c}\label{class_session_command_base_aaba73f2b2da71d4dc8e6b5e6d9eaae3c}} 
+\index{SessionCommandBase@{SessionCommandBase}!revert@{revert}}
+\index{revert@{revert}!SessionCommandBase@{SessionCommandBase}}
+\doxysubsubsection{\texorpdfstring{revert()}{revert()}}
+{\footnotesize\ttfamily virtual void Session\+Command\+Base\+::revert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_make_collage_command_a1da142097a22896e76f14f7df22dd5c6}{Make\+Collage\+Command}}, \mbox{\hyperlink{class_add_image_to_session_a0a2274ec5430bae09a68b019a299ed75}{Add\+Image\+To\+Session}}, and \mbox{\hyperlink{class_add_transformation_to_image_in_session_command_a854b4545435b5e76b7fc28ab726fdd46}{Add\+Transformation\+To\+Image\+In\+Session\+Command}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_session_command_base_a52d1fd07179d2eec3b007804180cc697}\label{class_session_command_base_a52d1fd07179d2eec3b007804180cc697}} 
+\index{SessionCommandBase@{SessionCommandBase}!session\_@{session\_}}
+\index{session\_@{session\_}!SessionCommandBase@{SessionCommandBase}}
+\doxysubsubsection{\texorpdfstring{session\_}{session\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_session}{Session}}$\ast$ Session\+Command\+Base\+::session\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+In which session the command eventually will be executed. \mbox{\Hypertarget{class_session_command_base_a5e7ba444f313d028cfc515bd1ec7233f}\label{class_session_command_base_a5e7ba444f313d028cfc515bd1ec7233f}} 
+\index{SessionCommandBase@{SessionCommandBase}!success\_message\_@{success\_message\_}}
+\index{success\_message\_@{success\_message\_}!SessionCommandBase@{SessionCommandBase}}
+\doxysubsubsection{\texorpdfstring{success\_message\_}{success\_message\_}}
+{\footnotesize\ttfamily std\+::string Session\+Command\+Base\+::success\+\_\+message\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Information about how the execution of the command went. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Session\+Command\+Base.\+h\end{DoxyCompactItemize}
